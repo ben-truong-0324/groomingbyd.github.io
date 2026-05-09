@@ -1,25 +1,21 @@
 ---
 layout: default
-title: About Hannah
+title: About Deanna
 permalink: /about/
 ---
 
-<section class="hero" id="about">
+<section class="hero" id="about" style="background: #000; color: #fff;">
     <div class="hero-content">
-        <h2>Loving care for your pets while you’re away.</h2>
-        <p style="font-size: 1.2rem; margin-bottom: 25px;">In-home pet sitting from a sitter who treats every pet like family.</p>
-        <div style="margin: 15px 0 25px; font-weight: 800; color: var(--poster-orange); font-size: 1.1rem; display: flex; align-items: center; gap: 8px;">
-            <i class="fas fa-shield-alt"></i> 
-            <span>
-                <a href="{{ '/assets/images/license.png' | relative_url }}" target="_blank" style="text-decoration: underline; color: var(--neon-pink);">Licensed</a>, <a href="{{ '/assets/images/insurance.png' | relative_url }}" target="_blank" style="text-decoration: underline; color: var(--neon-pink);">Bonded, and Insured</a>
-            </span>
-        </div>
+        <h2 style="color: #FF69B4;">Expert Grooming for Your Best Friend.</h2>
+        <p style="font-size: 1.2rem; margin-bottom: 25px;">Private, stress-free grooming with over 15 years of experience.</p>
         
-        <button class="testimonial-btn" onclick="document.getElementById('philosophy').scrollIntoView({behavior: 'smooth'})"><i class="fas fa-star"></i>What I offer</button>
-
+        <div style="display: flex; gap: 10px;">
+            <a href="https://groomer.io/booking/vacavillegroomingdepot" class="testimonial-btn" style="background: #FF69B4; color: #fff; text-decoration: none;">Book Now</a>
+            <button class="testimonial-btn" onclick="document.getElementById('philosophy').scrollIntoView({behavior: 'smooth'})" style="background: #fff; color: #000;">Learn More</button>
+        </div>
     </div>
     <div class="hero-image">
-        <img src="{{ '/assets/images/dog8.jpg' | relative_url }}" alt="Hannah grooming">
+        <img src="{{ '/assets/images/gbd0.png' | relative_url }}" alt="Deanna Grooming">
     </div>
 </section>
 

@@ -1,5 +1,14 @@
 /* ---------- VARIABLES & RESET ---------- */
 :root {
+    --neon-pink: #FF69B4;
+    --black: #000000;
+    --white: #FFFFFF;
+    
+    /* Supporting Tones */
+    --soft-pink: #FFF0F5; 
+    --dark-grey: #1a1a1a;
+    --price-bg: #fff9fc;
+
     --archived-neon-pink: #FF10F0;
     --poster-purple: #c5b1ef;
     --poster-orange: #c17d23;
@@ -25,18 +34,19 @@
     /* font-family: var(--accent-font); */
 }
 
-h1, h2, h3, .logo-hannah, .logo-pets, .philosophy blockquote {
+h1, h2, h3, .logo-Deanna, .logo-pets, .philosophy blockquote {
     /* font-family: var(--accent-font);
     text-transform: none; */
 } 
 
-.logo-hannah, .logo-pets {
+.logo-Deanna, .logo-pets {
     /* font-family: var(--accent-font);
     text-transform: none;  */
 }
 
 body {
-    background-color: var(--poster-orange);
+    background-color: var(--white);
+    font-family: var(--body-font);
     color: var(--black);
     line-height: 1.6;
     overflow-x: hidden; /* Prevents side scroll during modal open */
@@ -83,7 +93,7 @@ header {
     text-transform: uppercase;
     color: var(--black);
 }
-.logo-hannah { color: var(--black); }
+.logo-Deanna { color: var(--black); }
 
 /* Desktop Navigation */
 .nav-links {
@@ -93,7 +103,7 @@ header {
 
 .nav-links a {
     font-weight: bold;
-    color: var(--black);
+    color: var(--neon-pink);
     font-size: 1rem;
     transition: color 0.3s;
 }
@@ -220,7 +230,6 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0% 0% 0% 5%;
-    margin-bottom: 2em;
 }
 .hero-content { flex: 1; }
 .hero-content h2 { font-size: 2.5rem; margin-bottom: 20px; color: var(--poster-orange)}
@@ -237,7 +246,14 @@ header {
 
 /* ---------- TESTIMONIES CAROUSEL ---------- */
 .testimonies-section { padding: 2em 5%; background: var(--soft-pink);  }
-.section-title { text-align: center; margin-bottom: 40px; font-size: 2.2rem; color: var(--poster-orange);}
+/* .section-title { text-align: center; margin-bottom: 40px; font-size: 2.2rem; color: var(--poster-orange);} */
+.section-title {
+    color: var(--black);
+    border-bottom: 3px solid var(--neon-pink);
+    /* display: inline-block; */
+    padding-bottom: 1em;
+    font-size: 2.2rem; 
+}
 .testimony-card { min-width: 280px; background: var(--white); padding: 25px; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); scroll-snap-align: start; }
 .stars { color: #FFD700; margin-bottom: 10px; }
 .client-name { font-weight: bold; color: var(--black); margin-top: 10px; }
@@ -253,9 +269,9 @@ header {
 
 /* ---------- COUPON BUTTONS (Your Styles) ---------- */    
 .coupon-section { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; padding: 3rem 2rem; background: var(--white); }
-.coupon-btn { background: #ffecaa; border: 2px solid #111; color: black; font-weight: 800; font-size: 1.3rem; padding: 1rem 2rem; border-radius: 50px; display: flex; align-items: center; gap: 0.5rem; cursor: pointer; box-shadow: 0 5px 0 #0e6b63; transition: 0.15s; }
+.coupon-btn { background: white; border: 2px solid #111; color: black; font-weight: 800; font-size: 1.3rem; padding: 1rem 2rem; border-radius: 50px; display: flex; align-items: center; gap: 0.5rem; cursor: pointer; box-shadow: 0 5px 0 #0e6b63; transition: 0.15s; }
 .coupon-btn i { font-size: 1.5rem; }
-.coupon-btn:hover { background: var(--poster-purple); color: white; transform: scale(1.02); box-shadow: 0 2px 0 #0e6b63; }
+.coupon-btn:hover { background: var(--neon-pink); color: white; transform: scale(1.02); box-shadow: 0 2px 0 #0e6b63; }
 
 /* ---------- FEEDBACK BANNER (Pink) ---------- */
 .feedback-banner { background-color: var(--poster-purple); padding: 1.5rem 5%; display: flex; justify-content: center; border-bottom: 1px solid rgba(0,0,0,0.1);}
@@ -328,7 +344,7 @@ header {
 .btn {
     display: inline-block;
     padding: 12px 24px;
-    background-color: var(--teal);
+    background: var(--neon-pink);
     color: var(--black); /* Changed to black for contrast */
     border: 2px solid var(--black); /* Added black border */
     border-radius: 50px;
@@ -510,7 +526,7 @@ header {
 .testimonial-btn {
     display: inline-block;
     padding: 12px 24px;
-    background-color: var(--poster-purple);
+    background: var(--neon-pink);
     color: var(--black);
     border: 2px solid var(--black);
     border-radius: 50px;

@@ -1,7 +1,7 @@
-# Hannah’s Pampered Pets 🐾
+# Deanna’s Grooming by D 🐾
 
-Welcome to **Hannah’s Pampered Pets**
+Welcome to **Deanna’s Grooming by D**
 
-This GitHub Pages site serves as the online presence for Hannah’s services, showcasing everything from pet grooming to walks, cuddles, and personalized care.
+This GitHub Pages site serves as the online presence for Deanna’s services, showcasing everything from pet grooming to walks, cuddles, and personalized care.
 
 Visit the live page at groomingbyd.com
