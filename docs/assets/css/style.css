@@ -804,3 +804,32 @@ header {
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     scroll-snap-align: start;
 }
+
+/* Container starts centered for mobile */
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center; /* Centered on mobile */
+    width: 100%;
+    margin-top: 25px;
+}
+
+/* Individual button tweaks to match the Pink & Black theme */
+.book-now {
+    background: #FF69B4; /* Pink */
+    color: #fff;
+    text-decoration: none;
+}
+
+.learn-more {
+    background: #000; /* Black */
+    color: #fff;
+    border: 1px solid #FF69B4;
+}
+
+/* Desktop View (Screens wider than 768px) */
+@media (min-width: 768px) {
+    .hero-buttons {
+        justify-content: flex-start; /* Left justified on big screens */
+    }
+}
