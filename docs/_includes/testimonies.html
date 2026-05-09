@@ -1,15 +1,47 @@
 <section class="testimonies-section" id="testimonies">
-    <h2 class="section-title">Grooming Gallery <i class="fas fa-camera"></i></h2>
+    <h2 class="section-title">Reviews from Pet Parents <i class="fas fa-paw"></i></h2>
         
-    <div class="photo-grid-scroll">
+    <div class="reviews-carousel" style="margin-bottom: 50px;">
+        <div class="testimony-card">
+            <p>"We took our Bernedoodle in today for her first grooming appointment with Deanna and we couldn't be happier. Deanna did everything possible to minimize my worries and keep Maisey comfortable. Her shop is quiet and minimizes anxiety. I cannot recommend her highly enough."</p>
+            <p class="client-name">- Amanda N.</p>
+        </div>
+
+        <div class="testimony-card">
+            <p>"Amazing work for handling a dog that can be a handful. Would definitely recommend her for grooming!"</p>
+            <p class="client-name">- Sabrina B.</p>
+        </div>
+
+        <div class="testimony-card">
+            <p>"My dogs actually like going there! That says everything. The grooming is consistent, professional, and my dog always looks amazing afterward. It’s clear they treat the dog with care and kindness."</p>
+            <p class="client-name">- Julia Lang</p>
+        </div>
+    </div>
+    
+    <!-- <div class="photo-grid-scroll">
         {% for i in (1..13) %}
         <div class="testimony-card">
-            <img src="{{ '/groomingbyd.github.io/assets/images/gbd' | append: i | append: '.jpg' | relative_url }}" 
-                 style="width:100%; height:250px; border-radius:10px; object-fit:cover; margin-bottom: 15px; border: 2px solid var(--black);" 
-                 alt="Grooming by Dee Transformation">
-            <!-- <div class="stars" style="color: var(--neon-pink);">★★★★★</div> -->
-            <p class="client-name" style="margin-top: auto; color: var(--black);">Fresh & Clean</p>
+            <img src="{{ '/assets/images/gbd' | append: i | append: '.jpg' | relative_url }}" 
+                 style="width:100%; height:220px; border-radius:10px; object-fit:cover; margin-bottom: 15px; border: 2px solid var(--black);" 
+                 alt="Grooming transformation by Dee">
         </div>
         {% endfor %}
-    </div>
+    </div> -->
+    <section class="testimonies-section" id="testimonies">
+        <h2 class="section-title">Grooming Gallery</h2>
+            
+        <div class="photo-grid-scroll">
+            {% for i in (1..13) %}
+            <div class="testimony-card" style="text-align: center;">
+                <img src="{{ '/groomingbyd.github.io/assets/images/gbd' | append: i | append: '.jpg' | relative_url }}" 
+                    style="width:100%; height:250px; border-radius:10px; object-fit:cover; margin-bottom: 10px; border: 2px solid var(--black);" 
+                    alt="Grooming Transformation">
+                
+                <img src="{{ '/groomingbyd.github.io/assets/images/gbd_logo.png' | relative_url }}" alt="GBD Logo" style="height: 40px; width: auto; opacity: 0.8;">
+                
+                <p class="client-name" style="margin-top: 5px; font-size: 0.8rem; color: var(--black);">Vacaville Grooming Depot</p>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
 </section>
