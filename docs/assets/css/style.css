@@ -238,7 +238,7 @@ header {
 
 @media (max-width: 768px) {
     .hero { flex-direction: column-reverse; text-align: center; }
-    .hero-content { padding-right: 0; margin-top: 30px; }
+    .hero-content { padding-right: 0; margin-top: 30px; padding-bottom: 1.5em;}
     .hero-content h2 { font-size: 2rem; }
 }
 

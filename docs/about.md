@@ -30,7 +30,7 @@ permalink: /about/
         <button class="testimonial-btn" onclick="document.getElementById('qualifications').scrollIntoView({behavior: 'smooth'})">
             <i class="fas fa-award"></i> See Qualifications
         </button>
-        <a href="{{ '/pricing/' | relative_url }}" class="testimonial-btn" style="text-decoration: none;">
+        <a href="/groomingbyd.github.io/about" class="testimonial-btn" style="text-decoration: none;">
             <i class="fas fa-tags"></i> See Services & Pricing
         </a>
     </div>
