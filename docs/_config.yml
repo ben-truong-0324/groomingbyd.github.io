@@ -1,29 +1,29 @@
-title: Hannah's Pampered Pets
+title: Grooming by Dee
 description: Expert Care for Your Best Dog Friend in Vacaville and Sacramento
 show_downloads: false
 google_analytics: G-1JTFJ6JG9M
 theme: jekyll-theme-architect
 
 
-title: "Hannah's Pampered Pets | Professional Grooming & Sitting"
-email: "hpamperedpets@gmail.com" 
+title: "Grooming by Dee | Professional Grooming & Sitting"
+email: "groomingbyd@gmail.com" 
 description: >- 
   Professional pet grooming, pet bathing, and pet sitting services serving the 
   Vacaville and Sacramento areas. Licensed, bonded, and insured care 
   for your furry family members.
 baseurl: "" 
-url: "https://hannahspamperedpets.com"
+url: "https://groomingbyd.com"
 
 author:
-  name: "Hannah Venezio"
+  name: "Deanna"
 
 # --- SEO & Social Sharing ---
 # These fields are used by the jekyll-seo-tag plugin
 social:
-  name: "Hannah's Pampered Pets"
+  name: "Grooming by Dee"
   links:
-    - https://www.facebook.com/hannahspamperedpets
-    - https://www.instagram.com/hannahs_pampered_pets
+    - https://www.facebook.com/groomingbyd
+    - https://www.instagram.com/grooming_by_dee
   type: PetGroomingService
 
 # --- Build Settings ---
@@ -34,7 +34,7 @@ plugins:
   - jekyll-feed
 
 show_downloads: false 
-google_analytics: "G-1JTFJ6JG9M" 
+google_analytics: "" 
 
 defaults:
   - scope:

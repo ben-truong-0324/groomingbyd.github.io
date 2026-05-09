@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Hannah's Pampered Pets | Grooming, Bathing & Sitting
+title: Grooming by Dee | Grooming, Bathing & Sitting
 ---
 
 {% include hero.html %}       
