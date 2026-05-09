@@ -13,7 +13,7 @@ title: Grooming by Dee | Grooming, Bathing & Sitting
         <a href="/groomingbyd.github.io/about" class="testimonial-btn" style="text-decoration: none;">
             <i class="fas fa-award"></i> See Qualifications
         </a>
-        <a href="/groomingbyd.github.io/about" class="testimonial-btn" style="text-decoration: none;">
+        <a href="/groomingbyd.github.io/pricing" class="testimonial-btn" style="text-decoration: none;">
             <i class="fas fa-tags"></i> See Services & Pricing
         </a>
     </div>
