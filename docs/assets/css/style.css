@@ -285,7 +285,7 @@ header {
 /* ---------- FOOTER (Dark) ---------- */    
 .footer { background: var(--black); color: #ddd; padding: 2rem 5%; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1.5rem; text-align: center; }
 .social-icons { display: flex; gap: 15px; justify-content: center; }
-.social-icons a { color:  var(--poster-orange); font-size: 1.8rem; transition: 0.2s; }
+.social-icons a { color:  var(--neon-pink); font-size: 1.8rem; transition: 0.2s; }
 .social-icons a:hover { color: var(--teal); transform: scale(1.1); }
 
 @media (max-width: 768px) {
@@ -894,7 +894,6 @@ header {
 
 /* The actual Logo Image constraint */
 .logo-centered img {
-    max-height: 65px; /* Adjust this number to make the logo smaller or larger */
     width: auto;      /* Maintains aspect ratio so it's not "squashed" */
     display: block;
     transition: transform 0.3s ease;
@@ -958,7 +957,6 @@ header {
 }
 
 .nav-links li a {
-    color: var(--white);
     font-size: 1rem; /* Slightly larger text for balance */
     letter-spacing: 1px;
 }
@@ -1030,3 +1028,41 @@ header {
 .footer-link-bottom:hover {
     color: var(--white);
 }
+
+/* Mobile Navigation - Hidden by default */
+@media (max-width: 992px) {
+    .nav-links {
+        display: none; /* Hide standard links */
+        position: absolute;
+        top: 100%; /* Sits right under the black header bar */
+        right: 0;
+        width: 100%;
+        background-color: var(--black); /* Matches the pink & black theme */
+        padding: 20px 0;
+        z-index: 100;
+    }
+
+    /* This class is added by JavaScript when clicked */
+    .nav-links.active {
+        display: block; 
+    }
+
+    /* Force links to stack vertically */
+    .nav-links.active ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .nav-links li a {
+        font-size: 1.2rem;
+        padding: 10px 0;
+        display: block;
+    }
+}
+
+/* Style for the "X" state */
+.hamburger.open i::before {
+    content: "\f00d"; /* FontAwesome Unicode for "times" (X) */
+}
+

@@ -30,7 +30,7 @@
             <div class="footer-col">
                 <h5 style="color: var(--neon-pink); margin-bottom: 20px; text-transform: uppercase;">Our Philosophy</h5>
                 <p class="mission-statement" style="font-size: 0.9rem; line-height: 1.6; margin-bottom: 20px;">
-                    Vacaville Grooming Depot strives to provide a quiet, stress-free sanctuary for every pet. With 15+ years of experience, Deanna and her team prioritize patience and comfort, ensuring a luxury experience for your "fur baby."
+                    Vacaville Grooming Depot strives to provide a quiet, stress-free sanctuary for every pet. With 15+ years of experience, Deanna and her team prioritize patience and comfort, ensuring a luxury experience for your fur baby.
                 </p>
                 <div class="contact-info" style="font-size: 0.85rem; line-height: 1.8;">
                     Monday to Saturday<br>
@@ -62,7 +62,7 @@
 
             <div class="footer-col">
                 <h5 style="color: var(--neon-pink); margin-bottom: 20px; text-transform: uppercase;">Connect</h5>
-                <p class="small mb-4" style="font-size: 0.85rem; margin-bottom: 20px;">Join our community on social media to see our latest "fresh looks" and happy clients.</p>
+                <p class="small mb-4" style="font-size: 0.85rem; margin-bottom: 20px;">Follow us on social media to see our latest news, reviews, and promotions.</p>
                 <div class="social-icons" style="display: flex; gap: 15px;">
                     <a href="https://www.instagram.com/grooming_by_d/" target="_blank" class="btn-social" aria-label="Instagram">
                         <i class="fab fa-instagram"></i>
@@ -72,7 +72,7 @@
                     </a>
                 </div>
                 <div style="margin-top: 20px;">
-                     <img src="/groomingbyd.github.io/images/gbd_logo.png" alt="GBD Logo" style="height: 120px; opacity: 0.7;">
+                     <img src="/groomingbyd.github.io/assets/images/gbd_logo.png" alt="GBD Logo" style="height: 120px; opacity: 0.7;">
                 </div>
             </div>
         </div>
@@ -87,3 +87,18 @@
         </div>
     </div>
 </footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', function() {
+        // Toggle the mobile menu visibility
+        navLinks.classList.toggle('active');
+        
+        // Toggle the "X" icon state
+        hamburger.classList.toggle('open');
+    });
+});
+</script>
