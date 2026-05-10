@@ -882,7 +882,7 @@ header {
 /* Container for the whole header */
 .main-header {
     background: var(--black);
-    height: 200px; /* Forces a consistent height for the bar */
+    height: 180px; /* Forces a consistent height for the bar */
     display: flex;
     align-items: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -915,9 +915,7 @@ header {
     .logo-centered img {
         max-height: 280px; 
     }
-    .main-header {
-        height: 200px;
-    }
+   
 }
 
 
@@ -962,15 +960,13 @@ header {
 }
 
 @media (max-width: 768px) {
-    .main-header {
-        height: 200px; /* Still prominent, but scaled for phones */
-    }
+    
      .nav-links {
         display: none; /* Hide standard links to favor hamburger on mobile */
     }
     
     .logo-centered a img {
-        height: 200px !important;
+        height: 180px !important;
     }
 }
 
