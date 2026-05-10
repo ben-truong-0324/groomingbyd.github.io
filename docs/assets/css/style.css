@@ -945,8 +945,7 @@ header {
 
 /* 3. The Specific Logo Image - FORCE DIMENSIONS */
 .logo-centered a img {
-    /* Use !important if global styles are fighting you */
-    height: 100px !important; 
+    height: 180px !important; 
     width: auto !important;
     /* max-width: 200px !important; Prevents it from being too wide */
     display: block !important;
@@ -966,11 +965,11 @@ header {
 
 @media (max-width: 768px) {
     .main-header {
-        height: 100px; /* Still prominent, but scaled for phones */
+        height: 160px; /* Still prominent, but scaled for phones */
     }
     
     .logo-centered a img {
-        height: 80px !important;
+        height: 160px !important;
     }
 }
 
@@ -997,7 +996,7 @@ header {
         display: none; /* Hide standard links to favor hamburger on mobile */
     }
     .logo-centered a img {
-        height: 55px !important; /* Smaller logo for mobile phones */
+        height: 16px !important; /* Smaller logo for mobile phones */
     }
 }
 
