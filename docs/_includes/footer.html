@@ -1,4 +1,4 @@
-<div class="footer-section">
+<!-- <div class="footer-section">
     <div class="feedback-banner" style="background: var(--black);">
         <div class="feedback">      
             <span style="color: var(--white);">Ready to book your pet's spa day?</span>      
@@ -21,4 +21,67 @@
         
         <p>&copy; 2026 Vacaville Grooming Depot. All Rights Reserved.</p>
     </footer>
-</div>
+</div> -->
+
+<footer class="aa-footer" style="background: var(--black); color: var(--white); padding: 60px 0 20px;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+        <div class="row" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 40px;">
+            
+            <div class="footer-col">
+                <h5 style="color: var(--neon-pink); margin-bottom: 20px; text-transform: uppercase;">Our Philosophy</h5>
+                <p class="mission-statement" style="font-size: 0.9rem; line-height: 1.6; margin-bottom: 20px;">
+                    Vacaville Grooming Depot strives to provide a quiet, stress-free sanctuary for every pet. With 15+ years of experience, Deanna and her team prioritize patience and comfort, ensuring a luxury experience for your "fur baby."
+                </p>
+                <div class="contact-info" style="font-size: 0.85rem; line-height: 1.8;">
+                    Monday to Saturday<br>
+                    Vacaville, California<br>
+                    <a href="tel:7073058060" style="color: var(--neon-pink); text-decoration: none;">(707) 305-8060</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h5 style="color: var(--neon-pink); margin-bottom: 20px; text-transform: uppercase;">The Services</h5>
+                <ul style="list-style: none; padding: 0; line-height: 2; font-size: 0.9rem;">
+                    <li><a href="{{ '/pricing/' | relative_url }}" class="footer-link">Bubble Bath Service</a></li>
+                    <li><a href="{{ '/pricing/' | relative_url }}" class="footer-link">Day at the Spa</a></li>
+                    <li><a href="{{ '/pricing/' | relative_url }}" class="footer-link">Specialty Add-Ons</a></li>
+                    <li><a href="{{ '/pricing/' | relative_url }}" class="footer-link">Color Packages</a></li>
+                    <li><a href="https://groomer.io/booking/vacavillegroomingdepot" target="_blank" class="footer-link" style="color: var(--neon-pink);">Book Online</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5 style="color: var(--neon-pink); margin-bottom: 20px; text-transform: uppercase;">Information</h5>
+                <ul style="list-style: none; padding: 0; line-height: 2; font-size: 0.9rem;">
+                    <li><a href="{{ '/about/' | relative_url }}" class="footer-link">Meet Deanna & Team</a></li>
+                    <li><a href="{{ '/about/' | relative_url }}#philosophy" class="footer-link">Shop Environment</a></li>
+                    <li><a href="{{ '/' | relative_url }}#testimonies" class="footer-link">Client Reviews</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5 style="color: var(--neon-pink); margin-bottom: 20px; text-transform: uppercase;">Connect</h5>
+                <p class="small mb-4" style="font-size: 0.85rem; margin-bottom: 20px;">Join our community on social media to see our latest "fresh looks" and happy clients.</p>
+                <div class="social-icons" style="display: flex; gap: 15px;">
+                    <a href="https://www.instagram.com/grooming_by_d/" target="_blank" class="btn-social" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61586627363141" target="_blank" class="btn-social" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+                <div style="margin-top: 20px;">
+                     <img src="{{ '/assets/images/gbd_logo.png' | relative_url }}" alt="GBD Logo" style="height: 50px; opacity: 0.7;">
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-bar" style="border-top: 1px solid #333; padding-top: 20px; display: flex; flex-wrap: wrap; justify-content: space-between; font-size: 0.75rem;">
+            <div>Copyright © Vacaville Grooming Depot 2026</div>
+            <div class="bottom-links">
+                <a href="#!" class="footer-link-bottom" style="margin-left: 15px;">Privacy Policy</a>
+                <a href="#!" class="footer-link-bottom" style="margin-left: 15px;">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>

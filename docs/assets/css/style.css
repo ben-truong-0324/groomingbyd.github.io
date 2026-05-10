@@ -882,22 +882,14 @@ header {
 /* Container for the whole header */
 .main-header {
     background: var(--black);
-    height: 80px; /* Forces a consistent height for the bar */
+    height: 120px; /* Forces a consistent height for the bar */
     display: flex;
     align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     justify-content: space-between;
     padding: 0 5%;
     position: relative; /* Essential for the absolute centering below */
     z-index: 1000;
-}
-
-/* The Wrapper for the Logo */
-.logo-centered {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); /* Centers perfectly in the middle of the black bar */
-    z-index: 10;
 }
 
 /* The actual Logo Image constraint */
@@ -930,16 +922,6 @@ header {
 }
 
 
-/* 1. The Header Container */
-.main-header {
-    background-color: var(--black) !important; /* Forces the black theme */
-    height: 90px; 
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    overflow: hidden; /* Prevents a giant logo from spilling out */
-}
 
 .header-container {
     width: 100%;
@@ -964,20 +946,42 @@ header {
 /* 3. The Specific Logo Image - FORCE DIMENSIONS */
 .logo-centered a img {
     /* Use !important if global styles are fighting you */
-    height: 70px !important; 
+    height: 100px !important; 
     width: auto !important;
-    max-width: 200px !important; /* Prevents it from being too wide */
+    /* max-width: 200px !important; Prevents it from being too wide */
     display: block !important;
+    filter: drop-shadow(0 0 8px rgba(255, 105, 180, 0.4));
     object-fit: contain; /* Ensures the logo isn't distorted */
+}
+.logo-centered a img:hover {
+    transform: scale(1.05); /* Slight grow effect on hover */
+    filter: drop-shadow(0 0 12px rgba(255, 105, 180, 0.6));
+}
+
+.nav-links li a {
+    color: var(--white);
+    font-size: 1rem; /* Slightly larger text for balance */
+    letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+    .main-header {
+        height: 100px; /* Still prominent, but scaled for phones */
+    }
+    
+    .logo-centered a img {
+        height: 80px !important;
+    }
 }
 
 /* 4. Navigation & Hamburger Visibility */
 .hamburger {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: var(--white);
     cursor: pointer;
     z-index: 100;
 }
+
 
 .nav-links ul {
     display: flex;
@@ -995,4 +999,41 @@ header {
     .logo-centered a img {
         height: 55px !important; /* Smaller logo for mobile phones */
     }
+}
+
+
+.footer-link {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: var(--neon-pink);
+}
+
+.btn-social {
+    background: #333;
+    color: var(--white);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn-social:hover {
+    background: var(--neon-pink);
+}
+
+.footer-link-bottom {
+    color: #888;
+    text-decoration: none;
+}
+
+.footer-link-bottom:hover {
+    color: var(--white);
 }
