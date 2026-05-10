@@ -297,7 +297,7 @@ header {
     position: fixed; 
     bottom: 20px; 
     right: 20px; 
-    background-color: var(--teal); 
+    background-color: var(--neon-pink); 
     color: var(--white); 
     border: 2px solid var(--white); 
     width: 50px; 

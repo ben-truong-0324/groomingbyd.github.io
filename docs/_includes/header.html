@@ -1,23 +1,22 @@
-<header style="background: var(--black); color: var(--white);">
-    <a href="https://groomer.io/booking/vacavillegroomingdepot" class="book-btn-header" target="_blank" style="background: var(--neon-pink);">Book Now</a>      
-
-    <div class="header-right-side">
-        <div class="logo">
-            <h1>
-                <span class="logo-Deanna" style="color: var(--neon-pink);">Vacaville</span> 
-                <span class="logo-pets" style="color: var(--white);">Grooming Depot</span>
-            </h1>
-        </div>
-        
-        <ul class="nav-links" id="nav-links">
-            <li><a href="/groomingbyd.github.io/">Home</a></li>
-            <li><a href="/groomingbyd.github.io/about">About Dee</a></li>
-            <li><a href="/groomingbyd.github.io#testimonies">Gallery</a></li>
-            <li><a href="/groomingbyd.github.io/pricing">Rates</a></li>
-        </ul>
-
+<header class="main-header">
+    <div class="header-container">
         <div class="hamburger" id="hamburger">
-            <i class="fas fa-bars" style="color: var(--neon-pink);"></i>
+            <i class="fas fa-bars"></i>
         </div>
+
+        <div class="logo-centered">
+            <a href="{{ '/' | relative_url }}">
+                <img src="{{ '/assets/images/gbd_logo.png' | relative_url }}" alt="Vacaville Grooming Depot Logo">
+            </a>
+        </div>
+
+        <nav class="nav-links" id="nav-links">
+            <ul>
+                <li><a href="/groomingbyd.github.io/">Home</a></li>
+                <li><a href="/groomingbyd.github.io/about">About Dee</a></li>
+                <li><a href="/groomingbyd.github.io#testimonies">Reviews</a></li>
+                <li><a href="/groomingbyd.github.io/pricing">Rates</a></li>
+            </ul>
+        </nav>
     </div>
 </header>
