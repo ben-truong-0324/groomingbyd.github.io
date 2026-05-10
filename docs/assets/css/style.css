@@ -928,3 +928,71 @@ header {
         height: 70px;
     }
 }
+
+
+/* 1. The Header Container */
+.main-header {
+    background-color: var(--black) !important; /* Forces the black theme */
+    height: 90px; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    overflow: hidden; /* Prevents a giant logo from spilling out */
+}
+
+.header-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 2. The Logo Wrapper */
+.logo-centered {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 3. The Specific Logo Image - FORCE DIMENSIONS */
+.logo-centered a img {
+    /* Use !important if global styles are fighting you */
+    height: 70px !important; 
+    width: auto !important;
+    max-width: 200px !important; /* Prevents it from being too wide */
+    display: block !important;
+    object-fit: contain; /* Ensures the logo isn't distorted */
+}
+
+/* 4. Navigation & Hamburger Visibility */
+.hamburger {
+    font-size: 1.5rem;
+    color: var(--white);
+    cursor: pointer;
+    z-index: 100;
+}
+
+.nav-links ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* 5. Mobile Override */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide standard links to favor hamburger on mobile */
+    }
+    .logo-centered a img {
+        height: 55px !important; /* Smaller logo for mobile phones */
+    }
+}
