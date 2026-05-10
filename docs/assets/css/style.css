@@ -882,7 +882,7 @@ header {
 /* Container for the whole header */
 .main-header {
     background: var(--black);
-    height: 120px; /* Forces a consistent height for the bar */
+    height: 200px; /* Forces a consistent height for the bar */
     display: flex;
     align-items: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -914,10 +914,10 @@ header {
 /* Mobile Tweak: If the logo still feels too big on phones */
 @media (max-width: 480px) {
     .logo-centered img {
-        max-height: 50px; 
+        max-height: 280px; 
     }
     .main-header {
-        height: 70px;
+        height: 180px;
     }
 }
 
@@ -967,9 +967,12 @@ header {
     .main-header {
         height: 160px; /* Still prominent, but scaled for phones */
     }
+     .nav-links {
+        display: none; /* Hide standard links to favor hamburger on mobile */
+    }
     
     .logo-centered a img {
-        height: 160px !important;
+        height: 300px !important;
     }
 }
 
@@ -990,15 +993,6 @@ header {
     padding: 0;
 }
 
-/* 5. Mobile Override */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none; /* Hide standard links to favor hamburger on mobile */
-    }
-    .logo-centered a img {
-        height: 16px !important; /* Smaller logo for mobile phones */
-    }
-}
 
 
 .footer-link {
