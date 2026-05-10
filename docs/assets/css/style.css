@@ -877,19 +877,54 @@ header {
 }
 
 
-.header-logo {
-    max-height: 60px;
-    width: auto;
-    display: block;
-}
 
-.logo-centered {
+
+/* Container for the whole header */
+.main-header {
+    background: var(--black);
+    height: 80px; /* Forces a consistent height for the bar */
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    position: relative; /* Essential for the absolute centering below */
+    z-index: 1000;
 }
 
-.logo-centered a {
-    display: inline-block;
-    line-height: 0;
+/* The Wrapper for the Logo */
+.logo-centered {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Centers perfectly in the middle of the black bar */
+    z-index: 10;
+}
+
+/* The actual Logo Image constraint */
+.logo-centered img {
+    max-height: 65px; /* Adjust this number to make the logo smaller or larger */
+    width: auto;      /* Maintains aspect ratio so it's not "squashed" */
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Hamburger & Nav links adjustments */
+.hamburger {
+    z-index: 20; /* Ensures it stays above the logo on mobile */
+    color: var(--white);
+    cursor: pointer;
+}
+
+.nav-links {
+    z-index: 20;
+}
+
+/* Mobile Tweak: If the logo still feels too big on phones */
+@media (max-width: 480px) {
+    .logo-centered img {
+        max-height: 50px; 
+    }
+    .main-header {
+        height: 70px;
+    }
 }
