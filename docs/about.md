@@ -12,6 +12,8 @@ permalink: /about/
         <div style="display: flex; gap: 10px;">
             <a href="https://groomer.io/booking/vacavillegroomingdepot" class="testimonial-btn" style="background: #FF69B4; color: #fff; text-decoration: none;">Book Now</a>
             <button class="testimonial-btn" onclick="document.getElementById('philosophy').scrollIntoView({behavior: 'smooth'})" style="background: #fff; color: #000;">Learn More</button>
+            <a href="/groomingbyd.github.io#testimonies" class="testimonial-btn" style="background: #fff; color: #000;">See photos</a>
+
         </div>
     </div>
     <div class="hero-image">

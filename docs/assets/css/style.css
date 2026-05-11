@@ -541,7 +541,7 @@ header {
 
 .testimonial-btn:hover {
     background-color: var(--white);
-    color: var(--poster-purple);
+    color: var(--neon-pink);
     transform: translateY(2px);
     box-shadow: 0 2px 0 var(--black);
 }
