@@ -731,19 +731,7 @@ header {
     border-radius: 10px;
 }
 
-/* --- Refined Photo 2-Row Scroll --- */
-.photo-grid-scroll {
-    display: grid !important;
-    /* Two rows of exactly 320px to give enough breathing room */
-    grid-template-rows: repeat(2, 320px); 
-    grid-auto-flow: column;
-    grid-auto-columns: 260px; 
-    gap: 20px;
-    overflow-x: auto;
-    padding: 20px;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-}
+
 
 .photo-grid-scroll .testimony-card {
     background: white;

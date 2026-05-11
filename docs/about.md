@@ -15,7 +15,7 @@ permalink: /about/
         </div>
     </div>
     <div class="hero-image">
-        <img src="{{ '/groomingbyd.github.io/assets/images/gbd0.png' | relative_url }}" alt="Deanna Grooming">
+        <img src="{{ '/groomingbyd.github.io/assets/images/gbd0.png' }}" alt="Deanna Grooming">
     </div>
 </section>
 
