@@ -1070,6 +1070,5 @@ header {
     justify-content: space-between; /* Pushes content apart */
     
     padding: 25px;
-    margin-bottom: 20px;
     overflow: visible !important; /* Ensures nothing gets clipped */
 }
