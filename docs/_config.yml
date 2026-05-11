@@ -1,11 +1,11 @@
 title: "Vacaville Grooming Depot, Grooming by Dee!"
-email: "groomingbyd@gmail.com" 
+email: "groomingbydee@gmail.com" 
 description: >- 
   Professional pet grooming, pet bathing, and pet sitting services serving the 
-  Vacaville. Licensed, bonded, and insured care 
+  Vacaville community. Licensed, bonded, and insured care 
   for your furry family members.
-baseurl: "" 
-url: "https://groomingbyd.com"
+baseurl: "https://groomingbydee.com" 
+url: "https://groomingbydee.com"
 
 author:
   name: "Deanna"
@@ -27,7 +27,7 @@ plugins:
   - jekyll-feed
 
 show_downloads: false 
-google_analytics: "" 
+google_analytics: "G-60YWSTCHVL" 
 
 defaults:
   - scope:
