@@ -1056,3 +1056,20 @@ header {
     content: "\f00d"; /* FontAwesome Unicode for "times" (X) */
 }
 
+
+.review-card, .testimony-card {
+    /* 1. Remove any fixed height */
+    height: auto !important; 
+    
+    /* 2. Use min-height so short reviews don't look tiny */
+    min-height: 280px; 
+    
+    /* 3. Ensure flex direction allows the name to stay at the bottom */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Pushes content apart */
+    
+    padding: 25px;
+    margin-bottom: 20px;
+    overflow: visible !important; /* Ensures nothing gets clipped */
+}
