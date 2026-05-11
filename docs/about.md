@@ -13,7 +13,7 @@ permalink: /about/
     <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
         <a href="/groomingbyd.github.io#testimonies" class="testimonial-btn" style="text-decoration: none;">
             <i class="fas fa-tags"></i> More Photos
-        </a>>
+        </a>
         <a href="/groomingbyd.github.io/pricing" class="testimonial-btn" style="text-decoration: none;">
             <i class="fas fa-tags"></i> See Services & Pricing
         </a>
