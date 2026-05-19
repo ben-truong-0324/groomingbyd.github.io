@@ -109,16 +109,6 @@ header {
 
 .nav-links a:hover { color: var(--black); }
 
-/* Hamburger Icon */
-.hamburger {
-    display: none; /* Hidden on desktop */
-    font-size: 1.8rem;
-    cursor: pointer;
-    color: var(--black);
-    z-index: 2001; /* Must be above the modal */
-    transition: color 0.3s;
-}
-
 /* ---------- MOBILE MENU MODAL ---------- */
 @media (max-width: 768px) {
     .logo { 
@@ -887,13 +877,6 @@ header {
     transition: transform 0.3s ease;
 }
 
-/* Hamburger & Nav links adjustments */
-.hamburger {
-    z-index: 20; /* Ensures it stays above the logo on mobile */
-    color: var(--white);
-    cursor: pointer;
-}
-
 .nav-links {
     z-index: 20;
 }
@@ -961,9 +944,10 @@ header {
 /* 4. Navigation & Hamburger Visibility */
 .hamburger {
     font-size: 1.8rem;
-    color: var(--white);
+    color: var(--neon-pink);
     cursor: pointer;
     z-index: 100;
+    transition: color 0.3s;
 }
 
 
