@@ -70,7 +70,6 @@ ul { list-style: none; }
 
 /* ---------- HEADER LAYOUT (The main change) ---------- */
 header {
-    background-color: var(--poster-purple);
     padding: 10px 5%;
     display: flex;
     justify-content: space-between; /* Pushes content to far left and far right */
@@ -108,9 +107,7 @@ header {
     transition: color 0.3s;
 }
 
-.nav-links a:hover { color: var(--white); }
-
-
+.nav-links a:hover { color: var(--black); }
 
 /* Hamburger Icon */
 .hamburger {
@@ -323,7 +320,6 @@ header {
 
 /* ---------- HEADER & ACTIONS ---------- */
 header {
-    background-color: var(--poster-purple);
     padding: 15px 5%;
     display: flex;
     justify-content: space-between;
@@ -874,7 +870,6 @@ header {
 
 /* Container for the whole header */
 .main-header {
-    background: var(--black);
     height: 180px; /* Forces a consistent height for the bar */
     display: flex;
     align-items: center;
