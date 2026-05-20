@@ -126,13 +126,8 @@ header {
     display: none;
 }
 
-/* ---------- MOBILE MENU MODAL ---------- */
-@media (max-width: 768px) {
-    .logo { 
-        display: none; 
-    }
+@media (max-width: 1200px) {
     .hamburger { display: block; }
-    
     /* Turn desktop nav into full-screen modal */
     .nav-links {
         display: none; /* Hidden by default */
@@ -150,6 +145,14 @@ header {
         opacity: 0;
         transition: opacity 0.3s ease;
     }
+}
+
+/* ---------- MOBILE MENU MODAL ---------- */
+@media (max-width: 768px) {
+    .logo { 
+        display: none; 
+    }
+    
 
     /* Class added by JS to open modal */
     .nav-links.modal-open {
@@ -528,7 +531,7 @@ header {
 /* ---------- TESTIMONIAL BUTTON ---------- */
 .testimonial-btn {
     display: inline-block;
-    padding: 12px 24px;
+    padding: .1rem .5rem;
     background: var(--neon-pink);
     color: var(--black);
     border: 2px solid var(--black);
