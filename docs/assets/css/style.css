@@ -1010,7 +1010,7 @@ header {
 }
 
 /* Mobile Navigation - Hidden by default */
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
     .nav-links {
         display: none; /* Hide standard links */
         position: absolute;
