@@ -143,8 +143,20 @@ header {
         gap: 30px;
         z-index: 2000; /* Just below hamburger, above everything else */
         opacity: 0;
+        
         transition: opacity 0.3s ease;
     }
+    * Class added by JS to open modal */
+    .nav-links.modal-open {
+        display: flex;
+        opacity: 1;
+    }
+    .nav-links a:hover { color: var(--white); }
+    nav-links a {
+        font-size: 2rem;
+        color: var(--white);
+    }
+
 }
 
 /* ---------- MOBILE MENU MODAL ---------- */
@@ -154,16 +166,6 @@ header {
     }
     
 
-    /* Class added by JS to open modal */
-    .nav-links.modal-open {
-        display: flex;
-        opacity: 1;
-    }
-
-    .nav-links a {
-        font-size: 2rem;
-        color: var(--white);
-    }
 
     /* Change hamburger color to white when modal is open */
     .nav-links.modal-open ~ .hamburger {
