@@ -146,13 +146,12 @@ header {
         
         transition: opacity 0.3s ease;
     }
-    * Class added by JS to open modal */
     .nav-links.modal-open {
         display: flex;
         opacity: 1;
     }
     .nav-links a:hover { color: var(--white); }
-    nav-links a {
+    .nav-links a {
         font-size: 2rem;
         color: var(--white);
     }
