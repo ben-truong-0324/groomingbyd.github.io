@@ -54,7 +54,7 @@ body {
     overflow-x: hidden; /* Prevents side scroll during modal open */
     background-color: var(--soft-pink);
     /* Creates a subtle, soft-gray repeating paw print pattern using inline SVG */
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' width='60' height='60' opacity='0.05'><path fill='%233a3b3c' d='M30,35 c4,0,7-4,7-8 s-3-8-7-8 s-7,4-7,8 S26,35,30,35 z M70,35 c4,0,7-4,7-8 s-3-8-7-8 s-7,4-7,8 S66,35,70,35 z M42,22 c3,0,6-3,6-7 s-3-7-6-7 s-6,3-6,7 S39,22,42,22 z M58,22 c3,0,6-3,6-7 s-3-7-6-7 s-6,3-6,7 S55,22,58,22 z M50,40 c-10,0-18,6-18,14 c0,7,5,13,12,14 c2,2,1,5,0,7 c-1,2,0,3,2,3 c4,0,9-5,11-7 c1,0,2,0,3,0 c10,0,18-6,18-14 C68,46,60,40,50,40 z'/></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='https://www.w3.org/2000/svg' viewBox='0 0 100 100' width='60' height='60' opacity='0.05'><path fill='%233a3b3c' d='M30,35 c4,0,7-4,7-8 s-3-8-7-8 s-7,4-7,8 S26,35,30,35 z M70,35 c4,0,7-4,7-8 s-3-8-7-8 s-7,4-7,8 S66,35,70,35 z M42,22 c3,0,6-3,6-7 s-3-7-6-7 s-6,3-6,7 S39,22,42,22 z M58,22 c3,0,6-3,6-7 s-3-7-6-7 s-6,3-6,7 S55,22,58,22 z M50,40 c-10,0-18,6-18,14 c0,7,5,13,12,14 c2,2,1,5,0,7 c-1,2,0,3,2,3 c4,0,9-5,11-7 c1,0,2,0,3,0 c10,0,18-6,18-14 C68,46,60,40,50,40 z'/></svg>");
     background-repeat: repeat
 }
 
@@ -873,7 +873,7 @@ header {
 /* Apply a subtle paw print pattern to specific sections or the whole body */
 .testimonies-section, .about-shop-section, .main-header, footer {
     background-color: var(--white); /* Or var(--soft-pink) */
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cpath d='M20 25c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4zm-8-4c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3zm16 0c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3zm-12-8c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3zm8 0c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3z' fill='%23FF69B4' fill-opacity='0.1'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='https://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cpath d='M20 25c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4zm-8-4c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3zm16 0c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3zm-12-8c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3zm8 0c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3z' fill='%23FF69B4' fill-opacity='0.1'/%3E%3C/svg%3E");
 }
 
 
