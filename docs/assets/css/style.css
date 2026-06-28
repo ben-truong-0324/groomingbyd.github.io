@@ -303,8 +303,8 @@ header {
 /* ---------- BACK TO TOP ---------- */
 .back-to-top { 
     position: fixed; 
-    bottom: 20px; 
-    right: 20px; 
+    bottom: 15px; 
+    left: 15px; 
     background-color: var(--neon-pink); 
     color: var(--white); 
     border: 2px solid var(--white); 
@@ -1069,12 +1069,12 @@ header {
 /* --- CHAT BUBBLE --- */
 .chat-bubble {
     position: fixed;
-    bottom: 20px;
-    left: 20px; /* Positioned on the left to avoid the back-to-top button */
+    bottom: 15px;
+    right: 15px; /* Positioned on the left to avoid the back-to-top button */
     background: var(--neon-pink, #ff1493); /* Matches the neon pink used in your modal */
     color: white;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     display: flex;
     align-items: center;
