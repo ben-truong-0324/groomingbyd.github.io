@@ -214,7 +214,6 @@ header {
     z-index: 1;
     padding: 0 20px;
 }
-
 .video-content h2 {
     font-size: 3rem;
     margin-bottom: 15px;
@@ -881,13 +880,12 @@ header {
 
 /* Container for the whole header */
 .main-header {
-    height: 180px; /* Forces a consistent height for the bar */
+    height: 140px; /* Forces a consistent height for the bar */
     display: flex;
     align-items: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     justify-content: space-between;
     padding: 0 5%;
-    position: relative; /* Essential for the absolute centering below */
     z-index: 1000;
 }
 
@@ -934,7 +932,7 @@ header {
 
 /* 3. The Specific Logo Image - FORCE DIMENSIONS */
 .logo-centered a img {
-    height: 180px !important; 
+    height: 140px !important; 
     width: auto !important;
     /* max-width: 200px !important; Prevents it from being too wide */
     display: block !important;
@@ -958,7 +956,7 @@ header {
     }
     
     .logo-centered a img {
-        height: 180px !important;
+        height: 140px !important;
     }
 }
 
