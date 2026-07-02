@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Grooming by Dee | Grooming, Bathing & Sitting
+title: Grooming by Dee | Pet Grooming & Bathing
 ---
 
 {% include hero.html %}       
