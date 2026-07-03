@@ -1153,7 +1153,7 @@ header {
 }
 
 /* --- DESKTOP VIEW (Adjust the 768px breakpoint if needed) --- */
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
     .header-container {
         display: flex;
         justify-content: space-between;
