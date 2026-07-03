@@ -6,6 +6,7 @@ permalink: /about/
 
 {% include philosophy.html %}
 {% include qualifications.html %}
+{% include before_after.html %}
 
 {% include poster-services.html %} 
 

@@ -1089,3 +1089,56 @@ header {
     color: white;
     box-shadow: 0 6px 20px rgba(255, 20, 147, 0.6);
 }
+
+
+/* --- BEFORE & AFTER GALLERY --- */
+.before-after-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ba-pair {
+    display: flex;
+    gap: 10px;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.ba-image {
+    position: relative;
+    flex: 1; /* Makes both images take up exactly half the space */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.ba-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images fill the box without squishing */
+    display: block;
+}
+
+.ba-label {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: var(--neon-pink, #ff1493);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Stack images on top of each other on smaller phone screens */
+@media (max-width: 600px) {
+    .ba-pair {
+        flex-direction: column;
+    }
+}
