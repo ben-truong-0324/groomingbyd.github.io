@@ -880,7 +880,7 @@ header {
 
 /* Container for the whole header */
 .main-header {
-    height: 140px; /* Forces a consistent height for the bar */
+    height: 120px; /* Forces a consistent height for the bar */
     display: flex;
     align-items: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -932,7 +932,7 @@ header {
 
 /* 3. The Specific Logo Image - FORCE DIMENSIONS */
 .logo-centered a img {
-    height: 140px !important; 
+    height: 120px !important; 
     width: auto !important;
     /* max-width: 200px !important; Prevents it from being too wide */
     display: block !important;
@@ -956,7 +956,7 @@ header {
     }
     
     .logo-centered a img {
-        height: 140px !important;
+        height: 120px !important;
     }
 }
 
@@ -1140,5 +1140,62 @@ header {
 @media (max-width: 600px) {
     .ba-pair {
         flex-direction: column;
+    }
+}
+
+/* --- MOBILE DEFAULT VIEW --- */
+.desktop-book-now {
+    display: none; /* Hides the standalone button on mobile */
+}
+
+.mobile-book-now {
+    display: block; /* Shows the link inside the hamburger menu */
+}
+
+/* --- DESKTOP VIEW (Adjust the 768px breakpoint if needed) --- */
+@media (min-width: 768px) {
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* Create 3 equal-width columns so the logo is perfectly centered */
+    .desktop-book-now, .nav-links {
+        flex: 1; 
+    }
+
+    /* Align the Book Now button to the far left */
+    .desktop-book-now {
+        display: flex;
+        justify-content: flex-start; 
+    }
+
+    /* Center the logo in the middle column */
+    .logo-centered {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Push the navigation links to the far right */
+    .nav-links {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    /* Ensure the list items display in a row on desktop */
+    .nav-links ul {
+        display: flex;
+        gap: 20px; /* Space between the links */
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    /* Hide the mobile Book Now link inside the desktop navigation */
+    .mobile-book-now {
+        display: none; 
     }
 }
