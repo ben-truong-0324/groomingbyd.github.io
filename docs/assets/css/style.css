@@ -1199,3 +1199,73 @@ header {
         display: none; 
     }
 }
+
+/* --- MOBILE QUICK LINKS (DEFAULT) --- */
+.mobile-quick-links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 12px 0;
+    background-color: #ffffff;
+    border-top: 1px solid #f0f0f0;
+    box-shadow: 0 4px 6px -4px rgba(0,0,0,0.05); /* Slight shadow to separate from content */
+}
+
+.mobile-quick-links a {
+    text-decoration: none;
+    color: var(--black, #333);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.hide-on-mobile {
+    display: none !important; /* Hides these from the hamburger menu so they aren't shown twice */
+}
+
+@media (min-width: 1200px) {
+    /* Hide the mobile quick links bar on desktop */
+    .mobile-quick-links {
+        display: none; 
+    }
+    
+    /* Bring back the links inside the main navigation for desktop */
+    .hide-on-mobile {
+        display: block !important; 
+    }
+
+    /* ... Keep your existing desktop flexbox rules here ... */
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .desktop-book-now, .nav-links {
+        flex: 1; 
+    }
+
+    .desktop-book-now {
+        display: flex;
+        justify-content: flex-start; 
+    }
+
+    .logo-centered {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .nav-links ul {
+        display: flex;
+        gap: 20px; 
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+}

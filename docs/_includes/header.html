@@ -1,13 +1,9 @@
 <header class="main-header">
     <div class="header-container">
         
-        <!-- Mobile Hamburger Icon -->
-        <div class="hamburger" id="hamburger">
-            <i class="fas fa-bars"></i>
-        </div>
-
+        <!-- Left Side: Desktop Book Now Button -->
         <div class="desktop-book-now">
-            <a href="https://groomer.io/booking/vacavillegroomingdepot" class="testimonial-btn" >
+            <a href="https://groomer.io/booking/vacavillegroomingdepot" class="testimonial-btn" style="background: var(--neon-pink); color: #fff; text-decoration: none; padding: 10px 20px; border-radius: 5px; font-weight: 700;">
                 Book Now
             </a>
         </div>
@@ -19,15 +15,28 @@
             </a>
         </div>
 
+        <!-- Hamburger Icon (For Mobile) -->
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- Right Side: Nav Links -->
         <nav class="nav-links" id="nav-links">
             <ul>
-                <li class="mobile-book-now"><a href="https://groomer.io/booking/vacavillegroomingdepot">Book now</a></li>
+                <!-- Added hide-on-mobile so these don't show twice on phones -->
+                <li class="hide-on-mobile"><a href="/reviews">Reviews</a></li>
+                <li class="hide-on-mobile"><a href="/pricing">Rates</a></li>
                 <li><a href="/about">About Dee</a></li>
-                <li><a href="/reviews">Reviews</a></li>
-                <li><a href="/pricing">Rates</a></li>
-                <li><a href="/#photo_carousel">Photos</a></li>                
+                <li><a href="/#photo_carousel">Photos</a></li>
             </ul>
         </nav>
 
+    </div>
+
+    <!-- NEW: Mobile Quick Links Bar (Only visible on mobile) -->
+    <div class="mobile-quick-links">
+        <a href="https://groomer.io/booking/vacavillegroomingdepot" style="color: var(--neon-pink); font-weight: 700;">Book Now</a>
+        <a href="/reviews">Reviews</a>
+        <a href="/pricing">Rates</a>
     </div>
 </header>
