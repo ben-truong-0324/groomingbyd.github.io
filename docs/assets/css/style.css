@@ -1190,8 +1190,7 @@ header {
     font-weight: 600;
 }
 
-/* --- DESKTOP VIEW (768px and up) --- */
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
     .desktop-book-now {
         display: block; /* Show desktop button on the left */
     }
