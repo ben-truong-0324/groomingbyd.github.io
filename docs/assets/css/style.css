@@ -1143,120 +1143,61 @@ header {
     }
 }
 
+/* --- BASE FLEXBOX COLUMNS --- */
+.header-left, .header-right {
+    flex: 1; /* This ensures the left and right sides take up equal space, keeping the logo dead center */
+}
+
+.header-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo-centered {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
 /* --- MOBILE DEFAULT VIEW --- */
 .desktop-book-now {
-    display: none; /* Hides the standalone button on mobile */
+    display: none; /* Hide desktop button */
+}
+
+.nav-links {
+    display: none; /* Hide desktop nav links */
 }
 
 .mobile-book-now {
-    display: block; /* Shows the link inside the hamburger menu */
+    display: block; /* Show mobile button on the right */
 }
 
-/* --- DESKTOP VIEW (Adjust the 768px breakpoint if needed) --- */
-@media (min-width: 1200px) {
-    .header-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-
-    /* Create 3 equal-width columns so the logo is perfectly centered */
-    .desktop-book-now, .nav-links {
-        flex: 1; 
-    }
-
-    /* Align the Book Now button to the far left */
-    .desktop-book-now {
-        display: flex;
-        justify-content: flex-start; 
-    }
-
-    /* Center the logo in the middle column */
-    .logo-centered {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-    }
-
-    /* Push the navigation links to the far right */
-    .nav-links {
-        display: flex;
-        justify-content: flex-end;
-    }
-    
-    /* Ensure the list items display in a row on desktop */
-    .nav-links ul {
-        display: flex;
-        gap: 20px; /* Space between the links */
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-
-    /* Hide the mobile Book Now link inside the desktop navigation */
-    .mobile-book-now {
-        display: none; 
-    }
-}
-
-/* --- MOBILE QUICK LINKS (DEFAULT) --- */
 .mobile-quick-links {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 12px 0;
+    display: block;
     background-color: #ffffff;
     border-top: 1px solid #f0f0f0;
-    box-shadow: 0 4px 6px -4px rgba(0,0,0,0.05); /* Slight shadow to separate from content */
+    box-shadow: 0 4px 6px -4px rgba(0,0,0,0.05);
 }
 
 .mobile-quick-links a {
     text-decoration: none;
     color: var(--black, #333);
-    font-size: 1rem;
     font-weight: 600;
 }
 
-.hide-on-mobile {
-    display: none !important; /* Hides these from the hamburger menu so they aren't shown twice */
-}
-
-@media (min-width: 1200px) {
-    /* Hide the mobile quick links bar on desktop */
-    .mobile-quick-links {
-        display: none; 
-    }
-    
-    .hide-on-mobile {
-        display: block !important; 
-    }
-
-    .header-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-
-    .desktop-book-now, .nav-links {
-        flex: 1; 
-    }
-
+/* --- DESKTOP VIEW (768px and up) --- */
+@media (min-width: 768px) {
     .desktop-book-now {
-        display: flex;
-        justify-content: flex-start; 
-    }
-
-    .logo-centered {
-        flex: 1;
-        display: flex;
-        justify-content: center;
+        display: block; /* Show desktop button on the left */
     }
 
     .nav-links {
-        display: flex;
-        justify-content: flex-end;
+        display: block; /* Show desktop nav links on the right */
     }
     
     .nav-links ul {
@@ -1265,5 +1206,13 @@ header {
         margin: 0;
         padding: 0;
         list-style: none;
+    }
+
+    .mobile-book-now {
+        display: none; /* Hide the mobile button */
+    }
+
+    .mobile-quick-links {
+        display: none; /* Hide the bottom link bar completely */
     }
 }

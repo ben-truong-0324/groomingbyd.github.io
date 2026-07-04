@@ -2,10 +2,12 @@
     <div class="header-container">
         
         <!-- Left Side: Desktop Book Now Button -->
-        <div class="desktop-book-now">
-            <a href="https://groomer.io/booking/vacavillegroomingdepot" class="testimonial-btn" style="background: var(--neon-pink); color: #fff; text-decoration: none; padding: 10px 20px; border-radius: 5px; font-weight: 700;">
-                Book Now
-            </a>
+        <div class="header-left">
+            <div class="desktop-book-now">
+                <a href="https://groomer.io/booking/vacavillegroomingdepot" class="testimonial-btn" >
+                    Book Now
+                </a>
+            </div>
         </div>
 
         <!-- Center: Logo -->
@@ -15,32 +17,39 @@
             </a>
         </div>
 
-        <!-- Hamburger Icon (For Mobile) -->
-        <div class="hamburger" id="hamburger">
-            <i class="fas fa-bars"></i>
-        </div>
+        <div class="header-right">
+            
+            <!-- Shows ONLY on Mobile (Replaces the Hamburger) -->
+            <div class="mobile-book-now">
+                <a href="https://groomer.io/booking/vacavillegroomingdepot" class="testimonial-btn" style="background: var(--neon-pink); color: #fff; text-decoration: none; padding: 8px 15px; border-radius: 5px; font-weight: 700; font-size: 0.9rem;">
+                    Book Now
+                </a>
+            </div>
+            
+            <!-- Shows ONLY on Desktop -->
+            <nav class="nav-links" id="nav-links">
+                <ul>
+                    <li><a href="/reviews">Reviews</a></li>
+                    <li><a href="/pricing">Rates</a></li>
+                    <li><a href="/about">About Dee</a></li>
+                    <li><a href="/#photo_carousel">Photos</a></li>
+                </ul>
+            </nav>
 
-        <!-- Right Side: Nav Links -->
-        <nav class="nav-links" id="nav-links">
-            <ul>
-                <!-- Added hide-on-mobile so these don't show twice on phones -->
-                <li class="hide-on-mobile"><a href="/reviews">Reviews</a></li>
-                <li class="hide-on-mobile"><a href="/pricing">Rates</a></li>
-                <li><a href="/about">About Dee</a></li>
-                <li><a href="/#photo_carousel">Photos</a></li>
-            </ul>
-        </nav>
+        </div>
 
     </div>
     
 </header>
 <!-- Mobile Quick Links Bar (Only visible on mobile) -->
+
 <div class="mobile-quick-links">
-    <header class="main-header">
+    <header>
         <div class="header-container">
-            <a href="https://groomer.io/booking/vacavillegroomingdepot" style="color: var(--neon-pink); font-weight: 700;">Book Now</a>
-            <a href="/reviews">Reviews</a>
-            <a href="/pricing">Rates</a>
+            <a href="/reviews" class="testimonial-btn" >Reviews</a>
+            <a href="/pricing" class="testimonial-btn" >Rates</a>
+            <a href="/about" class="testimonial-btn" >About Dee</a>
+            <a href="/#photo_carousel" class="testimonial-btn" >Photos</a>
         </div>
     </header>
 </div>
