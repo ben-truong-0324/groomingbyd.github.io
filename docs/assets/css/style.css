@@ -127,9 +127,6 @@ header {
 }
 
 @media (max-width: 1200px) {
-    .logo-centered {
-        left: 30%;
-    }
     .hamburger { display: block; }
     /* Turn desktop nav into full-screen modal */
     .nav-links {
@@ -1216,5 +1213,11 @@ header {
 
     .mobile-quick-links {
         display: none; /* Hide the bottom link bar completely */
+    }
+}
+
+@media (max-width: 1200px) {
+    .logo-centered {
+        left: 30%;
     }
 }
