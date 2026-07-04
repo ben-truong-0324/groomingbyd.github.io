@@ -127,6 +127,9 @@ header {
 }
 
 @media (max-width: 1200px) {
+    .logo-centered {
+        left: 30%;
+    }
     .hamburger { display: block; }
     /* Turn desktop nav into full-screen modal */
     .nav-links {
@@ -1191,9 +1194,6 @@ header {
 }
 
 @media (min-width: 1200px) {
-    .logo-centered {
-        left: 30%;
-    }
     .desktop-book-now {
         display: block; /* Show desktop button on the left */
     }
