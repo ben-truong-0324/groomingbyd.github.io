@@ -1223,30 +1223,3 @@ header {
 }
 
 
-/* Hides the content by default */
-.accordion-content {
-    display: none;
-    padding: 15px;
-    background-color: #f9f9f9; /* Optional: adds a slight background to open sections */
-    margin-bottom: 10px;
-}
-
-/* Styles the clickable button */
-.accordion-button {
-    cursor: pointer;
-    width: 100%;
-    text-align: left;
-    padding: 15px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
-}
-
-/* Optional: Changes color when hovered or opened */
-.accordion-button:hover, 
-.accordion-button.active {
-    background-color: #eee;
-}

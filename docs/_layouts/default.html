@@ -105,52 +105,16 @@
         </div>
       </div>
     </div>
-<!-- 
-    <div class="modal fade" id="coupon2Modal" role="dialog" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h3 class="h4 modal-title" >Refer a Friend! 🎁</h3>
-            <button type="button" class="close-modal btn" style="padding: 5px 15px; border-radius:5px;">&times;</button>
-          </div>
-          <div class="modal-body">
-              <p style="font-size: 1.1rem; margin-bottom: 20px;">Share the love! Tell your friends to mention your name when booking. They get $5 off plus their first visit coupon while you get a $5 off for life (can be stacked 3 times)</p>
-              
-              <a href="https://my.groomer.io/3a003074-fbcf-4165-bff7-cbdfcde8d493" target="_blank" class="btn">Book Now</a>
-          </div>
-        </div>
-      </div>
-    </div> -->
 
         <script>
-            // --- ACCORDION LOGIC FOR PRICING & COUPONS ---
-            document.addEventListener("DOMContentLoaded", () => {
-                const accordions = document.querySelectorAll('.accordion-button');
-                
-                accordions.forEach(button => {
-                    button.addEventListener('click', function() {
-                        // Toggle the active class on the button itself (useful for styling a +/- icon)
-                        this.classList.toggle('active');
-                        
-                        // Get the next element (the content block)
-                        const content = this.nextElementSibling;
-                        
-                        // Toggle visibility
-                        if (content.style.display === "block") {
-                            content.style.display = "none";
-                        } else {
-                            content.style.display = "block";
-                        }
-                    });
-                });
-            });
+            
             // --- MOBILE NAV LOGIC ---
             const hamburger = document.getElementById('hamburger');
             const navLinks = document.getElementById('nav-links');
             hamburger.addEventListener('click', () => navLinks.classList.toggle('modal-open'));
             document.querySelectorAll('.nav-links a').forEach(link => link.addEventListener('click', () => navLinks.classList.remove('modal-open')));
 
-            // --- ACCESSIBLE TABS LOGIC (From your snippet) ---
+            // --- ACCESSIBLE TABS LOGIC ---
             window.addEventListener("load", () => {
                 document.querySelectorAll(".tabs").forEach(e => {
                     const t = e.querySelector("ul");
