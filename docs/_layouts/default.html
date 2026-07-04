@@ -123,6 +123,27 @@
     </div> -->
 
         <script>
+            // --- ACCORDION LOGIC FOR PRICING & COUPONS ---
+            document.addEventListener("DOMContentLoaded", () => {
+                const accordions = document.querySelectorAll('.accordion-button');
+                
+                accordions.forEach(button => {
+                    button.addEventListener('click', function() {
+                        // Toggle the active class on the button itself (useful for styling a +/- icon)
+                        this.classList.toggle('active');
+                        
+                        // Get the next element (the content block)
+                        const content = this.nextElementSibling;
+                        
+                        // Toggle visibility
+                        if (content.style.display === "block") {
+                            content.style.display = "none";
+                        } else {
+                            content.style.display = "block";
+                        }
+                    });
+                });
+            });
             // --- MOBILE NAV LOGIC ---
             const hamburger = document.getElementById('hamburger');
             const navLinks = document.getElementById('nav-links');
