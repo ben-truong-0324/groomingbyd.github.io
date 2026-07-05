@@ -111,21 +111,28 @@
             // --- MOBILE NAV LOGIC ---
             const hamburger = document.getElementById('hamburger');
             const navLinks = document.getElementById('nav-links');
-            hamburger.addEventListener('click', () => navLinks.classList.toggle('modal-open'));
-            document.querySelectorAll('.nav-links a').forEach(link => link.addEventListener('click', () => navLinks.classList.remove('modal-open')));
+            if (hamburger) {
+                hamburger.addEventListener('click', () => navLinks.classList.toggle('modal-open'));
+            }
+
+            if (navLinks) {
+                document.querySelectorAll('.nav-links a').forEach(link => 
+                    link.addEventListener('click', () => navLinks.classList.remove('modal-open'))
+                );
+            }
 
             // --- ACCESSIBLE TABS LOGIC ---
             window.addEventListener("load", () => {
-                const hamburger = document.getElementById('hamburger');
-                const navLinks = document.getElementById('nav-links');
+                const mobileMenuBtn = document.getElementById('hamburger');
+                const mobileNavLinks = document.getElementById('nav-links');
 
-                hamburger.addEventListener('click', function() {
-                    // Toggle the mobile menu visibility
-                    navLinks.classList.toggle('active');
-                    
-                    // Toggle the "X" icon state
-                    hamburger.classList.toggle('open');
-                });
+                // FIX: Check for existence again inside the load event
+                if (mobileMenuBtn && mobileNavLinks) {
+                    mobileMenuBtn.addEventListener('click', function() {
+                        mobileNavLinks.classList.toggle('active');
+                        mobileMenuBtn.classList.toggle('open');
+                    });
+                }
                 document.querySelectorAll(".tabs").forEach(e => {
                     const t = e.querySelector("ul");
                     if (!t) return;
