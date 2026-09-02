@@ -934,9 +934,7 @@ header {
 .logo-centered a img {
     height: 120px !important; 
     width: auto !important;
-    /* max-width: 200px !important; Prevents it from being too wide */
     display: block !important;
-    filter: drop-shadow(0 0 8px rgba(255, 105, 180, 0.4));
     object-fit: contain; /* Ensures the logo isn't distorted */
 }
 .logo-centered a img:hover {
