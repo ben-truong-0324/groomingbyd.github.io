@@ -8,7 +8,7 @@ permalink: /reviews/
 
 {% include before_after.html %}
 
-<section class="final-cta" style="text-align: center; padding: 40px 5%; background: var(--soft-pink);">
+<section class="final-cta" style="text-align: center; padding: 40px 5%; background: #ffedd5;">
     <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
         <a href="/#testimonies" class="testimonial-btn" style="text-decoration: none;">
             <i class="fas fa-tags"></i> See Photos
