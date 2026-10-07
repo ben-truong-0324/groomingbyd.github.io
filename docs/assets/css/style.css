@@ -1221,3 +1221,27 @@ header {
 }
 
 
+.badge-cutesy {
+  font-family: 'Quicksand', sans-serif;
+  display: inline-block;
+  background-color: #008080; /* Teal */
+  color: #ffffff;
+  padding: 14px 30px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 5px solid #004d4d; /* Darker teal for a 3D button effect */
+  position: relative;
+  transition: background-color 0.2s ease;
+}
+
+.badge-cutesy:hover {
+  background-color: #00b3b3;
+  animation: cutesy-wiggle 0.4s ease-in-out infinite;
+}
+
+@keyframes cutesy-wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+}
