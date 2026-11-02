@@ -1,0 +1,31 @@
+<!-- First Load Image Modal -->
+<div id="pictureModal" class="modal-overlay">
+  <div class="modal-content">
+    <span id="closePictureModal" class="close-modal">&times;</span>
+    <img src="{{ '/assets/images/modal_photo.png' | relative_url }}" alt="Special Offer" />
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+  var modal = document.getElementById("pictureModal");
+  // Target the unique ID instead of the generic class
+  var closeBtn = document.getElementById("closePictureModal");
+
+  if (!sessionStorage.getItem("hasSeenModal")) {
+    modal.style.display = "flex";
+    sessionStorage.setItem("hasSeenModal", "true");
+  }
+
+  // Close when the exact X is clicked
+  closeBtn.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+});
+</script>

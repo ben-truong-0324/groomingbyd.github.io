@@ -1,6 +1,6 @@
 /* ---------- VARIABLES & RESET ---------- */
 :root {
-    --neon-pink: #ea580c;
+    --font-color-1: #2A9D8F;
     --black: #3a3b3c;
     --gray-bg: #f9f9f9; 
     --soft-pink: #FFF0F5;
@@ -9,19 +9,20 @@
     /* Supporting Tones */
     --soft-pink: #FFF0F5; 
     --dark-grey: #1a1a1a;
-    --price-bg: #fff9fc;
+    --background-color-1: #fff9fc;
 
-    --archived-neon-pink: #FF10F0;
     --poster-purple: #c5b1ef;
-    --poster-orange: #c17d23;
     --soft-pink: #fef1f8; 
 
+    --header-color-1: #E63946;
+    --header-color-2: #1D3557;
+    --background-color-1: #F1FAEE;
+
     
-    --archived-light-pink: #FFD1DC; /* Body background */
-    --teal: #c2f4f5;       /* Accent color */
+    --archived-light-pink: #1D3557; /* Body background */
+    --teal: #E63946;       /* Accent color */
     --black: #111111;
     --white: #FFFFFF;
-    --price-bg: #fbeff4;   /* Pricing section bg */
 
     --accent-font: 'Dancing Script', cursive;
     --body-font: 'Quicksand', sans-serif;
@@ -74,6 +75,7 @@ ul { list-style: none; }
     .site-wrapper { width: 80%; max-width: 1400px; }
 }
 
+.font-15em { font-size: 1.5em!important; }
 /* ---------- HEADER LAYOUT (The main change) ---------- */
 header {
     padding: 10px 5%;
@@ -108,7 +110,7 @@ header {
 
 .nav-links a {
     font-weight: bold;
-    color: var(--neon-pink);
+    color: var(--font-color-1);
     font-size: 1rem;
     transition: color 0.3s;
 }
@@ -119,7 +121,7 @@ header {
 /* 4. Navigation & Hamburger Visibility */
 .hamburger {
     font-size: 1.8rem;
-    color: var(--neon-pink);
+    color: var(--font-color-1);
     cursor: pointer;
     z-index: 100;
     transition: color 0.3s;
@@ -239,7 +241,6 @@ header {
     padding: 0% 0% 0% 5%;
 }
 .hero-content { flex: 1; }
-.hero-content h2 { font-size: 2.5rem; margin-bottom: 20px; color: var(--poster-orange)}
 .hero-image { flex: 1; display: flex; justify-content: center; }
 .hero-image img, .hero-image video { max-width: 100%; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
 
@@ -253,12 +254,20 @@ header {
 
 /* ---------- TESTIMONIES CAROUSEL ---------- */
 .testimonies-section { padding: 2em 5%; background: var(--soft-pink);  }
-/* .section-title { text-align: center; margin-bottom: 40px; font-size: 2.2rem; color: var(--poster-orange);} */
 .section-title {
-    color: var(--black);
-    border-bottom: 3px solid var(--neon-pink);
+    color: var(--header-color-1);
+    border-bottom: 3px solid var(--header-color-1);
     /* display: inline-block; */
-    padding-bottom: 1em;
+    padding-bottom: .5em;
+    margin-bottom: .5em;
+    font-size: 2.2rem; 
+}
+.pricing-title {
+    color: var(--header-color-2);
+    border-bottom: 3px solid var(--header-color-2);
+    /* display: inline-block; */
+    padding-bottom: .5em;
+    margin-bottom: .5em;
     font-size: 2.2rem; 
 }
 .testimony-card { min-width: 280px; background: var(--white); padding: 25px; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); scroll-snap-align: start; }
@@ -266,7 +275,7 @@ header {
 .client-name { font-weight: bold; color: var(--black); margin-top: 10px; }
 
 /* ---------- PRICING SECTION (Your Styles) ---------- */    
-.pricing { padding: 2.5rem 2rem; background: var(--price-bg); }
+.pricing { padding: 2.5rem 2rem; background: var(--background-color-1); }
 .pricing h2 { text-align: center; font-size: 2.5rem; color: #111; margin-bottom: 2rem; }
 .pricing-grid { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; }
 .price-card { background: white; border-radius: 35px; padding: 2rem 1.5rem; flex: 1 1 220px; max-width: 280px; box-shadow: 0 10px 20px rgba(0,0,0,0.08); text-align: center; border-bottom: 8px solid  var(--poster-purple); transition: transform 0.3s; }
@@ -278,7 +287,7 @@ header {
 .coupon-section { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; padding: 3rem 2rem; background: var(--white); }
 .coupon-btn { background: white; border: 2px solid #111; color: black; font-weight: 800; font-size: 1.3rem; padding: 1rem 2rem; border-radius: 50px; display: flex; align-items: center; gap: 0.5rem; cursor: pointer; box-shadow: 0 5px 0 #0e6b63; transition: 0.15s; }
 .coupon-btn i { font-size: 1.5rem; }
-.coupon-btn:hover { background: var(--neon-pink); color: white; transform: scale(1.02); box-shadow: 0 2px 0 #0e6b63; }
+.coupon-btn:hover { background: var(--font-color-1); color: white; transform: scale(1.02); box-shadow: 0 2px 0 #0e6b63; }
 
 /* ---------- FEEDBACK BANNER (Pink) ---------- */
 .feedback-banner { background-color: var(--poster-purple); padding: 1.5rem 5%; display: flex; justify-content: center; border-bottom: 1px solid rgba(0,0,0,0.1);}
@@ -292,7 +301,7 @@ header {
 /* ---------- FOOTER (Dark) ---------- */    
 .footer { color: var(--black); padding: 2rem 5%; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1.5rem; text-align: center; }
 .social-icons { display: flex; gap: 15px; justify-content: center; }
-.social-icons a { color:  var(--neon-pink); font-size: 1.8rem; transition: 0.2s; }
+.social-icons a { color:  var(--font-color-1); font-size: 1.8rem; transition: 0.2s; }
 .social-icons a:hover { color: var(--teal); transform: scale(1.1); }
 
 @media (max-width: 768px) {
@@ -304,7 +313,7 @@ header {
     position: fixed; 
     bottom: 15px; 
     left: 15px; 
-    background-color: var(--neon-pink); 
+    background-color: var(--font-color-1); 
     color: var(--white); 
     border: 2px solid var(--white); 
     width: 50px; 
@@ -325,7 +334,7 @@ header {
     transform: translateY(-3px);
 }
 
-.comparison { padding: 2em 5%; background: var(--white); text-align:center;} .comp-grid { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 30px;} .comp-item img { max-width: 100%; border-radius: 15px; width: 300px; height: 300px; object-fit: cover; border: 4px solid var(--price-bg); } .comp-item h4 { margin-top: 10px; color: var(--poster-orange); }
+.comparison { padding: 2em 5%; background: var(--white); text-align:center;} .comp-grid { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 30px;} .comp-item img { max-width: 100%; border-radius: 15px; width: 300px; height: 300px; object-fit: cover; border: 4px solid var(--background-color-1); } .comp-item h4 { margin-top: 10px; color: var(--font-color-1); }
 
 
 /* ---------- HEADER & ACTIONS ---------- */
@@ -346,11 +355,13 @@ header {
     gap: 15px; /* Spaces out the button and the hamburger */
 }
 
+.align-center { text-align: center; }
+
 /* ---------- BUTTONS (FIXED FOR READABILITY) ---------- */
 .btn {
     display: inline-block;
     padding: 12px 24px;
-    background: var(--neon-pink);
+    background: var(--font-color-1);
     color: var(--black); /* Changed to black for contrast */
     border: 2px solid var(--black); /* Added black border */
     border-radius: 50px;
@@ -364,7 +375,7 @@ header {
 
 .btn:hover {
     background-color: var(--white);
-    color: var(--poster-orange);
+    color: var(--font-color-1);
     border-color: var(--poster-purple);
     transform: scale(1.05);
     box-shadow: 0 2px 0 var(--teal);
@@ -386,8 +397,8 @@ header {
 
 .book-btn-header:hover {
     background-color: var(--white);
-    color: var(--poster-orange);
-    border-color: var(--poster-orange);
+    color: var(--font-color-1);
+    border-color: var(--font-color-1);
     box-shadow: 0 3px 0 var(--teal);
     transform: scale(1.05);
 }
@@ -401,7 +412,7 @@ header {
 
 /* ---------- PHILOSOPHY ---------- */
 .philosophy { 
-    padding: 80px 5%; 
+    padding: 1.5rem 5%; 
     text-align: center; 
     background: var(--soft-pink); 
 }
@@ -410,7 +421,7 @@ header {
     font-size: 1.8rem; 
     font-style: italic; 
     font-weight:bold;
-    color: var(--poster-orange); 
+    color: var(--font-color-1); 
     max-width: 800px; 
     margin: 0 auto; 
     position: relative; 
@@ -423,7 +434,7 @@ header {
 .philosophy blockquote::after { 
     content: '"'; 
     font-size: 3rem; 
-    color: var(--poster-orange); 
+    color: var(--font-color-1); 
     position: absolute; 
     opacity: 0.5; 
     line-height: 1;
@@ -532,7 +543,7 @@ header {
 .testimonial-btn {
     display: inline-block;
     padding: .1rem .5rem;
-    background: var(--neon-pink);
+    background: var(--font-color-1);
     color: var(--black);
     border: 2px solid var(--black);
     border-radius: 50px;
@@ -547,7 +558,7 @@ header {
 
 .testimonial-btn:hover {
     background-color: var(--white);
-    color: var(--neon-pink);
+    color: var(--font-color-1);
     transform: translateY(2px);
     box-shadow: 0 2px 0 var(--black);
 }
@@ -560,8 +571,8 @@ header {
     display: inline-flex; 
     align-items: center; gap: 8px;
     background: var(--white); 
-    border: 2px solid var(--poster-orange); 
-    color: var(--poster-orange);
+    border: 2px solid var(--font-color-1); 
+    color: var(--font-color-1);
     padding: 12px 30px; 
     border-radius: 50px; 
     font-weight: 800; 
@@ -634,7 +645,7 @@ header {
 
 
 .logo-pets { 
-    color: var(--poster-orange); /* Applies the new orange color */
+    color: var(--font-color-1); /* Applies the new orange color */
 }
 
 
@@ -767,7 +778,7 @@ header {
 .photo-grid-scroll .client-name {
     font-size: 1rem;
     font-weight: 600;
-    color: var(--poster-orange);
+    color: var(--font-color-1);
     text-align: center;
     margin: 0;
     padding-bottom: 5px;
@@ -977,7 +988,7 @@ header {
 }
 
 .footer-link:hover {
-    color: var(--neon-pink);
+    color: var(--font-color-1);
 }
 
 .btn-social {
@@ -994,7 +1005,7 @@ header {
 }
 
 .btn-social:hover {
-    background: var(--neon-pink);
+    background: var(--font-color-1);
 }
 
 .footer-link-bottom {
@@ -1067,7 +1078,7 @@ header {
     position: fixed;
     bottom: 15px;
     right: 15px; /* Positioned on the left to avoid the back-to-top button */
-    background: var(--neon-pink, #ff1493); /* Matches the neon pink used in your modal */
+    background: var(--font-color-1, #ff1493); /* Matches the neon pink used in your modal */
     color: white;
     width: 50px;
     height: 50px;
@@ -1125,7 +1136,7 @@ header {
     position: absolute;
     bottom: 10px;
     left: 10px;
-    background: var(--neon-pink, #ff1493);
+    background: var(--font-color-1, #ff1493);
     color: white;
     padding: 5px 12px;
     border-radius: 20px;
@@ -1244,4 +1255,65 @@ header {
   0%, 100% { transform: rotate(0deg); }
   25% { transform: rotate(-5deg); }
   75% { transform: rotate(5deg); }
+}
+
+/* Dark background overlay */
+.modal-overlay {
+  display: none; /* Hidden by default; JS will change this to flex */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+/* The white box holding the image */
+.modal-content {
+  position: relative;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  max-width: 90%;
+  max-height: 90vh;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Responsive image - Updated to prevent stretching */
+.modal-content img {
+  max-width: 100%;
+  max-height: 80vh; 
+  width: auto;            /* Overrides any global theme widths */
+  height: auto;           /* Overrides any global theme heights */
+  object-fit: contain;    /* Forces the image to keep its original aspect ratio */
+  display: block;
+  margin: 0 auto;         /* Centers the image inside the white box */
+  border-radius: 4px;
+}
+
+/* Teal Close Button */
+.close-modal {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background-color: #2A9D8F;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  z-index: 10; /* Ensures the X is always clickable above the overlay */
+}
+
+.close-modal:hover {
+  background-color: #1f7a6f;
 }

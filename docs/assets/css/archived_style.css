@@ -1,6 +1,6 @@
 CSS Variables for colors
 :root {
-    --neon-pink: #FF10F0;
+    --font-color-1: #FF10F0;
     --light-pink: #FFD1DC;
     --teal: #008080;
     --black: #111111;
@@ -62,7 +62,7 @@ a {
 /* Header & Navigation */
 /* ---------- HEADER & ACTIONS ---------- */
 header {
-    background-color: var(--neon-pink);
+    background-color: var(--font-color-1);
     padding: 15px 5%;
     display: flex;
     justify-content: space-between;
@@ -196,7 +196,7 @@ blockquote {
 blockquote::before, blockquote::after {
     content: '"';
     font-size: 4rem;
-    color: var(--neon-pink);
+    color: var(--font-color-1);
     position: absolute;
     opacity: 0.3;
 }
@@ -274,7 +274,7 @@ blockquote::after { bottom: -40px; right: -20px; }
 
 .price-card:hover {
     transform: translateY(-5px);
-    border-color: var(--neon-pink);
+    border-color: var(--font-color-1);
 }
 
 .price-card h3 { color: var(--teal); margin-bottom: 15px; font-size: 1.5rem; }
@@ -333,7 +333,7 @@ footer {
     transition: color 0.3s;
 }
 
-.socials a:hover { color: var(--neon-pink); }
+.socials a:hover { color: var(--font-color-1); }
 
 .feedback-section {
     border-top: 1px solid #333;
@@ -355,8 +355,8 @@ footer {
 }
 
 .feedback-btn:hover {
-    background-color: var(--neon-pink);
-    border-color: var(--neon-pink);
+    background-color: var(--font-color-1);
+    border-color: var(--font-color-1);
 }
 
 /* Back to Top Button */
@@ -364,7 +364,7 @@ footer {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background-color: var(--neon-pink);
+    background-color: var(--font-color-1);
     color: var(--white);
     border: none;
     width: 50px;
@@ -394,7 +394,7 @@ footer {
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: var(--neon-pink);
+        background-color: var(--font-color-1);
         padding: 20px 0;
         box-shadow: 0 5px 10px rgba(0,0,0,0.1);
     }
@@ -480,7 +480,7 @@ footer {
 
 /* ---------- FEEDBACK BANNER ---------- */
 .feedback-banner {
-    background-color: var(--neon-pink);
+    background-color: var(--font-color-1);
     padding: 1.5rem 2rem;
     display: flex;
     justify-content: center;
@@ -560,7 +560,7 @@ footer {
     text-align: center;
     position: relative;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    border-top: 10px solid var(--neon-pink);
+    border-top: 10px solid var(--font-color-1);
     animation: modalPop 0.3s ease-out forwards;
 }
 
