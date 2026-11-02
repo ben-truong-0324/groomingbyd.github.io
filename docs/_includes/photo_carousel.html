@@ -3,7 +3,13 @@
         <h2 class="section-title">Grooming Gallery</h2>
 
         <div class="photo-grid-scroll">
-
+            {% for i in (100..109) %}
+            <div class="testimony-card" style="text-align: center;">
+                <img src="{{ '/assets/images/gbd' | append: i | append: '.jpeg' }}" 
+                    style="width:100%; height:250px; border-radius:10px; object-fit:cover; margin-bottom: 10px; border: 2px solid var(--black);" 
+                    alt="Grooming Transformation">
+            </div>
+            {% endfor %}
             {% for i in (15..47) reversed %}
             <div class="testimony-card" style="text-align: center;">
                 <img src="{{ '/assets/images/gbd' | append: i | append: '.JPG' }}" 
@@ -11,7 +17,7 @@
                     alt="Grooming Transformation">
             </div>
             {% endfor %}
-            <div class="testimony-card" style="text-align: center;">
+            <!-- <div class="testimony-card" style="text-align: center;">
                 <video style="width:100%; height:250px; border-radius:10px; object-fit:cover; margin-bottom: 10px; border: 2px solid var(--black);" 
                     controls 
                     muted 
@@ -26,7 +32,7 @@
                     playsinline>
                     <source src="{{ '/assets/images/vid3.MOV' }}" type="video/mp4">
                 </video>
-            </div>
+            </div> -->
             {% for i in (4..13) %}
             <div class="testimony-card" style="text-align: center;">
                 <img src="{{ '/assets/images/gbd' | append: i | append: '.jpg' }}" 
@@ -34,14 +40,14 @@
                     alt="Grooming Transformation">
             </div>
             {% endfor %}
-            {% for i in (80..80) %}
+            {% for i in (80..81) %}
             <div class="testimony-card" style="text-align: center;">
                 <img src="{{ '/assets/images/gbd' | append: i | append: '.png' }}" 
                     style="width:100%; height:250px; border-radius:10px; object-fit:cover; margin-bottom: 10px; border: 2px solid var(--black);" 
                     alt="Grooming Transformation">
             </div>
             {% endfor %}
-            <div class="testimony-card" style="text-align: center;">
+            <!-- <div class="testimony-card" style="text-align: center;">
                 <video style="width:100%; height:250px; border-radius:10px; object-fit:cover; margin-bottom: 10px; border: 2px solid var(--black);" 
                     controls 
                     muted 
@@ -64,7 +70,7 @@
                     playsinline>
                     <source src="{{ '/assets/images/vid6.mov' }}" type="video/mp4">
                 </video>
-            </div>
+            </div> -->
         </div>
     </section>
 </section>
